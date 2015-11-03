@@ -1,0 +1,114 @@
+body {
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 14px;
+	margin: 0;
+	min-width: 720px;
+}
+
+a {
+	text-decoration: none;
+	color: navy;
+	border-bottom: 1px solid;
+	transition: color 0.2s, background 0.2s;
+}
+
+a:hover {
+	color: inherit;
+}
+
+nav {
+	background: lightgray;
+	background: linear-gradient(to bottom, lightgray, darkgray);
+}
+
+nav a {
+	padding: 10px;
+	display: inline-block;
+	color: black;
+	border: none;
+	border-radius: 0 0 5px 5px;
+}
+
+nav a:hover {
+	background: lightgray;
+}
+
+.widm {
+	width: 720px;
+	margin: 0 auto;
+}
+
+.fright {
+	float: right;
+}
+
+.splash {
+	background: darkgray;
+	background: linear-gradient(to bottom, darkgray, white);
+	background-image: url(background.jpg);
+	background-size: cover;
+	padding: 50px 0;
+	text-align: center;
+	color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 32px;
+}
+
+.btn {
+	border-bottom: 3px solid;
+	display: inline-block;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #333;
+	color: lightgray;
+}
+
+.btn:hover {
+	color: white;
+}
+
+.btn:active {
+	color: lightgray;
+	background-color: #111;
+}
+
+.winbrand {
+	font-family: 'Segoe UI', 'Noto Sans', sans-serif;
+}
+
+.macbrand {
+	font-family: 'San Francisco', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+#osx {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(22,22,22,0.9);
+	transition: bottom 0.5s;
+}
+
+#osx:target {
+	display: block;
+}
+
+.modal {
+	width: 480px;
+	position: fixed;
+	top: 25%;
+	background-color: white;
+	padding: 10px;
+	border-radius: 5px;
+	left: 50%;
+	margin-left: -240px;
+	opacity: 1;
+}
