@@ -14,4 +14,4 @@ echo Source: %source%
 rem You need to set a valid location for the destination.
 rem If the destination has spaces, make sure you keep the brackets
 rem and you don't put another slash at the end (the script handels it).
-set destin=%userprofile%\Pictures\Dumped
+set destin=%userprofile%\Pictures\CameraDump
