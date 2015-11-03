@@ -1,2 +1,0 @@
-# camdump
-Camera Photo Dumper
