@@ -2,54 +2,20 @@
 <html>
 	<head>
 		<title>Camera Photo Dumper</title>
-		<!-- Google Fonts -->
-		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="theme.css">
-		<link rel="stylesheet" type="text/css" href="animate.css">
-
-		<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.0.js"></script>
-		<script src="http://ajax.aspnetcdn.com/ajax/modernizr/modernizr-2.7.2.js"></script>
-		<script>
-			$(window).scroll(function() {
-				$('.animation-test').each(function(){
-					var imagePos = $(this).offset().top;
-
-					var topOfWindow = $(window).scrollTop();
-					if (imagePos < topOfWindow+400) {
-						$(this).addClass("slideRight");
-					}
-				});
-			});
-
-			$('.element-to-hide').css('visibility', 'hidden');
-		</script>
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="icon" type="image/png" href="logo32.png" />
 	</head>
 	<body>
-		<nav>
-			<div class="container"><div class="widm">
-				<a href="index.html"><img src="logo32.png" height="14"> Camera Photo Dumper</a>
-
-				<div class="fright">
-					<a href="compile.html" title="Download"><i class="fa fa-download"></i></a><a href="compile.html" title="Compile from scratch"><i class="fa fa-code"></i></a><a href="https://github.com/thegreatrazz/cameradump" title="GitHub"><i class="fa fa-github"></i></a>
-				</div>
-			</div></div>
-		</nav>
-			<div class="splash">
-				<h1 data-animation="fadeInUp"  data-timeout="400"x class="animated fadeInUp"><img src="logo32.png" height="25"> Camera Photo Dumper</h1>
-				<h3>One click photo dumper</h3>
-				<p>Get it for <a href="#" class="btn"><span class="winbrand"><i class="fa fa-windows"></i> Windows 7, 8.1 and 10</span></a> or <a href="#osx" class="btn"><span class="macbrand"><i class="fa fa-apple"></i> OS X El Capitan</span></a></p>
-			</div>
-			<div class="content widm">
-				<h2>Setting it up</h2>
-			</div>
-
-
-		<div id="osx">
-			<div class="modal">
-				<h3>Dear Mac users,</h3>
-				<p>As I don't have continuous access to a Mac, I am unable to make a version just now. But as time progresses, I will make an AppleScript or Automator script for OS X. In the meantime, I would suggest getting <a href="https://www.virtualbox.org">a virtual machine software</a>, <a href="https://www.microsoft.com/en-us/software-download/windows10ISO">a copy of Windows</a> and using it that way.</p>
-				<a href="#" class="btn">Close</a>
-			</div>
+		<div class="bg"></div>
+		<nav class="subtitleanim"><a href="index.html"><img src="logo32.png" height="10"> Camera Photo Dumper</a><a href="https://www.github.com/thegreatrazz/cameradump"><i class="fa fa-github fa-fw"></i></a></nav>
+		<div class="splash">
+			<h1 class="titleanim">Camera Photo Dumper</h1>
+			<h3 class="subtitleanim">One-click photo dumper</h3>
+			<p class="subtitleanim"><a href="https://github.com/thegreatrazz/cameradump/releases" class="btn"><i class="fa fa-download"></i> Download</a></p>
 		</div>
+		<footer class="titleanim">
+			<i class="fa fa-code"></i> with <i class="fa fa-heart"></i> by <a href="http://www.thegreatrazz.cf/">Raresh Nistor</a>
+		</footer>
 	</body>
 </html>

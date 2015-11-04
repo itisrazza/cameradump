@@ -1,114 +1,126 @@
 body {
+	background-color: #494949;
 	font-family: 'Noto Sans', sans-serif;
+	color: white;
 	font-size: 14px;
-	margin: 0;
-	min-width: 720px;
 }
 
 a {
 	text-decoration: none;
-	color: navy;
 	border-bottom: 1px solid;
-	transition: color 0.2s, background 0.2s;
+	transition: color 0.2s;
+	color: lightgray;
 }
 
 a:hover {
 	color: inherit;
 }
 
-nav {
-	background: lightgray;
-	background: linear-gradient(to bottom, lightgray, darkgray);
-}
-
-nav a {
-	padding: 10px;
-	display: inline-block;
-	color: black;
-	border: none;
-	border-radius: 0 0 5px 5px;
-}
-
-nav a:hover {
-	background: lightgray;
-}
-
-.widm {
-	width: 720px;
-	margin: 0 auto;
-}
-
-.fright {
-	float: right;
-}
-
-.splash {
-	background: darkgray;
-	background: linear-gradient(to bottom, darkgray, white);
-	background-image: url(background.jpg);
-	background-size: cover;
-	padding: 50px 0;
-	text-align: center;
-	color: white;
-}
-
-h1, h2, h3, h4, h5, h6 {
+h1, h3 {
 	font-weight: 400;
 }
 
-h1 {
-	font-size: 32px;
+.bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-image: url(background.jpg);
+	background-size: cover;
 }
 
-.btn {
-	border-bottom: 3px solid;
-	display: inline-block;
-	padding: 10px;
-	border-radius: 5px;
-	background-color: #333;
-	color: lightgray;
-}
-
-.btn:hover {
-	color: white;
-}
-
-.btn:active {
-	color: lightgray;
-	background-color: #111;
-}
-
-.winbrand {
-	font-family: 'Segoe UI', 'Noto Sans', sans-serif;
-}
-
-.macbrand {
-	font-family: 'San Francisco', 'Helvetica Neue', Helvetica, sans-serif;
-}
-
-#osx {
-	display: none;
+nav {
 	position: fixed;
 	top: 0;
 	left: 0;
 	right: 0;
-	bottom: 0;
-	background-color: rgba(22,22,22,0.9);
-	transition: bottom 0.5s;
+	background-color: rgba(0,0,0,0);
+	background: linear-gradient(to bottom, rgba(66,66,66,1), rgba(0,0,0,0));
+	text-align: center;
 }
 
-#osx:target {
-	display: block;
-}
-
-.modal {
-	width: 480px;
-	position: fixed;
-	top: 25%;
-	background-color: white;
+nav a {
+	display: inline-block;
 	padding: 10px;
-	border-radius: 5px;
+	color: white;
+	border: none;
+	transition: color 0.2s, background-color 0.3s;
+}
+
+nav a:hover {
+	background-color: rgba(66,66,66,1);
+}
+
+.splash {
+	position: fixed;
+	top: 50%;
 	left: 50%;
-	margin-left: -240px;
-	opacity: 1;
+	text-align: center;
+	width: 310px;
+	height: 170px;
+	margin: -85px 0 0 -155px;
+	transform: scale(1.25,1.25);
+}
+
+.btn {
+	padding: 10px;
+	display: inline-block;
+	background-color: #212121;
+	border-bottom: none;
+	transition: color 0.2s, background-color 0.3s;
+}
+
+.btn:hover {
+	background-color: #333;
+}
+
+.btn:active {
+	background-color: #111;
+}
+
+footer {
+	padding: 10px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	font-size: 12px;
+	text-align: center;
+}
+
+@keyframes titleanim {
+    from {
+    	opacity: 0;
+    	transform: translate(0,25px) rotateX(-45deg);
+    }
+
+    to {
+    	transform: rotateX(0deg);
+    	opacity: 1;
+    }
+}
+
+@keyframes subtitleanim {
+    from {
+    	opacity: 0;
+    	transform: translate(0,-25px) rotateX(-45deg);
+    }
+
+    to {
+    	transform: rotateX(0deg);
+    	opacity: 1;
+    }
+}
+
+.titleanim {
+	animation-name: titleanim;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+.subtitleanim {
+	animation-name: subtitleanim;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
 }
